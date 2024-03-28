@@ -3,7 +3,9 @@ from collections import deque
 
 mapgrid = sys.argv[1]
 alg = sys.argv[2]
-heur = sys.argv[3]
+if len(sys.argv) == 2:
+    heur = sys.argv[3]
+
 
 # function to read the map file
 def read_map(file):
